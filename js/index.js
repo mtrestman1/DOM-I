@@ -44,15 +44,8 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 const ctaImage = document.querySelector('#cta-img');
 ctaImage.src = siteContent['cta']['img-src'];
 
-//ctaImage.src = '/Users/mtrestman1/Lambda/Lambda H&CSS/DOM-I/img/header-img.png';
-
-// const middleImage = document.querySelector('#middle-img');
-// middleImage.src = '/Users/mtrestman1/Lambda/Lambda H&CSS/DOM-I/img/mid-page-accent.jpg';
-
 const btnID = document.querySelector('button');
 btnID.textContent = 'Get Started';
-
-
 
 const navLinkOne = document.querySelector('nav a:first-child');
 navLinkOne.textContent = 'Services';
@@ -106,4 +99,6 @@ featuresParagraphBottom[1].textContent = siteContent['main-content']['product-co
 
 featuresHeaderBottom[2].textContent = 'Vision';
 featuresParagraphBottom[2].textContent = siteContent['main-content']['vision-content'];
+
+
 
