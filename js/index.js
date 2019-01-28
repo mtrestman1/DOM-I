@@ -70,3 +70,18 @@ navLinkFive.textContent = 'About';
 const navLinkSix = document.querySelector('nav a:nth-child(6)');
 navLinkSix.textContent = 'Contact';
 
+const domAwesome = document.querySelector('h1');
+domAwesome.textContent = 'DOM Is Awesome';
+
+const featuresHeader = document.querySelector('.text-content:first-child');
+featuresHeader.textContent = 'Features';
+
+const featuresHeaderTwo = document.querySelector('.text-content:nth-child(2');
+featuresHeaderTwo.textContent = 'About';
+
+const featuresParagraph = document.querySelector('p:first-child');
+featuresParagraph.textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+const featuresParagraphTwo = document.querySelector('p:nth-child(2)');
+featuresParagraphTwo.textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
