@@ -46,3 +46,27 @@ ctaImage.src = '/Users/mtrestman1/Lambda/Lambda H&CSS/DOM-I/img/header-img.png';
 
 const middleImage = document.querySelector('#middle-img');
 middleImage.src = '/Users/mtrestman1/Lambda/Lambda H&CSS/DOM-I/img/mid-page-accent.jpg';
+
+const btnID = document.querySelector('button');
+btnID.textContent = 'Get Started';
+
+
+
+const navLinkOne = document.querySelector('nav a:first-child');
+navLinkOne.textContent = 'Services';
+
+const navLinkTwo = document.querySelector('nav a:nth-child(2)');
+navLinkTwo.textContent = 'Product';
+
+const navLinkThree = document.querySelector('nav a:nth-child(3)');
+navLinkThree.textContent = 'Vision';
+
+const navLinkFour = document.querySelector('nav a:nth-child(4)');
+navLinkFour.textContent = 'Features';
+
+const navLinkFive = document.querySelector('nav a:nth-child(5)');
+navLinkFive.textContent = 'About';
+
+const navLinkSix = document.querySelector('nav a:nth-child(6)');
+navLinkSix.textContent = 'Contact';
+
