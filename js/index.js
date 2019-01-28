@@ -42,10 +42,12 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 const ctaImage = document.querySelector('#cta-img');
-ctaImage.src = '/Users/mtrestman1/Lambda/Lambda H&CSS/DOM-I/img/header-img.png';
+ctaImage.src = siteContent['cta']['img-src'];
 
-const middleImage = document.querySelector('#middle-img');
-middleImage.src = '/Users/mtrestman1/Lambda/Lambda H&CSS/DOM-I/img/mid-page-accent.jpg';
+//ctaImage.src = '/Users/mtrestman1/Lambda/Lambda H&CSS/DOM-I/img/header-img.png';
+
+// const middleImage = document.querySelector('#middle-img');
+// middleImage.src = '/Users/mtrestman1/Lambda/Lambda H&CSS/DOM-I/img/mid-page-accent.jpg';
 
 const btnID = document.querySelector('button');
 btnID.textContent = 'Get Started';
@@ -54,34 +56,54 @@ btnID.textContent = 'Get Started';
 
 const navLinkOne = document.querySelector('nav a:first-child');
 navLinkOne.textContent = 'Services';
+navLinkOne.style.color = "green";
 
 const navLinkTwo = document.querySelector('nav a:nth-child(2)');
 navLinkTwo.textContent = 'Product';
+navLinkTwo.style.color = "green";
 
 const navLinkThree = document.querySelector('nav a:nth-child(3)');
 navLinkThree.textContent = 'Vision';
+navLinkThree.style.color = "green";
 
 const navLinkFour = document.querySelector('nav a:nth-child(4)');
 navLinkFour.textContent = 'Features';
+navLinkFour.style.color = "green";
 
 const navLinkFive = document.querySelector('nav a:nth-child(5)');
 navLinkFive.textContent = 'About';
+navLinkFive.style.color = "green";
 
 const navLinkSix = document.querySelector('nav a:nth-child(6)');
 navLinkSix.textContent = 'Contact';
+navLinkSix.style.color = "green";
 
 const domAwesome = document.querySelector('h1');
 domAwesome.textContent = 'DOM Is Awesome';
 
-const featuresHeader = document.querySelector('.text-content:first-child');
-featuresHeader.textContent = 'Features';
+const featuresHeader = document.querySelectorAll('.main-content .top-content .text-content h4');
+featuresHeader[0].textContent = 'Features';
 
-const featuresHeaderTwo = document.querySelector('.text-content:nth-child(2');
-featuresHeaderTwo.textContent = 'About';
+const featuresParagraph = document.querySelectorAll('.main-content .top-content .text-content p');
+featuresParagraph[0].textContent = siteContent['main-content']['features-content'];
 
-const featuresParagraph = document.querySelector('p:first-child');
-featuresParagraph.textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 
-const featuresParagraphTwo = document.querySelector('p:nth-child(2)');
-featuresParagraphTwo.textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+featuresHeader[1].textContent = 'About';
+featuresParagraph[1].textContent = siteContent['main-content']['about-content'];
+
+const middleImage = document.querySelector('#middle-img');
+middleImage.src = siteContent['main-content']['middle-img-src'];
+
+
+const featuresHeaderBottom = document.querySelectorAll('.main-content .bottom-content .text-content h4');
+featuresHeaderBottom[0].textContent = 'Services';
+
+const featuresParagraphBottom = document.querySelectorAll('.main-content .bottom-content .text-content p');
+featuresParagraphBottom[0].textContent = siteContent['main-content']['services-content'];
+
+featuresHeaderBottom[1].textContent = 'Product';
+featuresParagraphBottom[1].textContent = siteContent['main-content']['product-content'];
+
+featuresHeaderBottom[2].textContent = 'Vision';
+featuresParagraphBottom[2].textContent = siteContent['main-content']['vision-content'];
 
