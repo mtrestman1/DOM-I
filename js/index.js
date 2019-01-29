@@ -47,29 +47,38 @@ ctaImage.src = siteContent['cta']['img-src'];
 const btnID = document.querySelector('button');
 btnID.textContent = 'Get Started';
 
-const navLinkOne = document.querySelector('nav a:first-child');
-navLinkOne.textContent = 'Services';
-navLinkOne.style.color = "green";
+let navLinks = document.querySelectorAll('nav a');
 
-const navLinkTwo = document.querySelector('nav a:nth-child(2)');
-navLinkTwo.textContent = 'Product';
-navLinkTwo.style.color = "green";
+navLinks.forEach((link, i) => {
+  link.innerHTML = siteContent.nav[`nav-item-${i+1}`];
+})
+navLinks.forEach((link, i) => {
+  link.style.color = 'green';
+})
 
-const navLinkThree = document.querySelector('nav a:nth-child(3)');
-navLinkThree.textContent = 'Vision';
-navLinkThree.style.color = "green";
+// const navLinkOne = document.querySelector('nav a:first-child');
+// navLinkOne.textContent = 'Services';
+// navLinkOne.style.color = "green";
 
-const navLinkFour = document.querySelector('nav a:nth-child(4)');
-navLinkFour.textContent = 'Features';
-navLinkFour.style.color = "green";
+// const navLinkTwo = document.querySelector('nav a:nth-child(2)');
+// navLinkTwo.textContent = 'Product';
+// navLinkTwo.style.color = "green";
 
-const navLinkFive = document.querySelector('nav a:nth-child(5)');
-navLinkFive.textContent = 'About';
-navLinkFive.style.color = "green";
+// const navLinkThree = document.querySelector('nav a:nth-child(3)');
+// navLinkThree.textContent = 'Vision';
+// navLinkThree.style.color = "green";
 
-const navLinkSix = document.querySelector('nav a:nth-child(6)');
-navLinkSix.textContent = 'Contact';
-navLinkSix.style.color = "green";
+// const navLinkFour = document.querySelector('nav a:nth-child(4)');
+// navLinkFour.textContent = 'Features';
+// navLinkFour.style.color = "green";
+
+// const navLinkFive = document.querySelector('nav a:nth-child(5)');
+// navLinkFive.textContent = 'About';
+// navLinkFive.style.color = "green";
+
+// const navLinkSix = document.querySelector('nav a:nth-child(6)');
+// navLinkSix.textContent = 'Contact';
+// navLinkSix.style.color = "green";
 
 const domAwesome = document.querySelector('h1');
 domAwesome.textContent = 'DOM Is Awesome';
